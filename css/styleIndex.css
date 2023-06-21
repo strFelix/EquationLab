@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+
+body{
+    background-color: white;
+    color: #292929;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+header{
+    /*posicionamento dinamico em linha*/
+    display: flex;
+    flex-direction: row;
+    /*Espaço entre div do logo com o menu*/
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+#logo-escrito{
+    font-family: 'Monomaniac One', sans-serif;
+    color: #292929;
+    margin-top: 8px;
+    margin-left: 150px;
+    font-size: 24px;
+}
+
+#logo-escrito:hover{
+    color: #292929;
+}
+
+li{
+    /* Alinhar menu um ao lado do outro e espaçar elementos */
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+}
+
+a{
+    color: #292929;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #4253ce;
+    transition: 0.1s all;
+}
+
+#ultimo-a{
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 150px;
+    border: 1px solid;
+}
+
+#ultimo-a:hover{
+    transition: all 0.3;
+    border-color: #7584f2;
+}
+
+main{
+    /* colocar as div uma ao lado da outra */
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#conteudo-principal{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#section-sobre-contato{
+    margin-top: px;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+#div-titulo-sobre{
+    display: flex;
+    flex-direction: row;
+}
+
+#div-titulo-contato{
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: #4253ce;
+}
+
+#p-main{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#p-sobre{
+    width: 1000px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+aside {
+    margin-top: 80px;
+}
+
+#img-main{
+    width: 500px;
+    pointer-events: none;
+    margin-left: 120px;
+    transform: scale(0.85);
+}
+
+#img-sobre{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    padding-right: 20px;
+}
+
+form{
+    /* colocando os input um em cima do outro */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+#label-input-txt{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-txt{
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    outline: none;
+    align-self: center;
+    width: 80%;
+}
+
+textarea{
+    resize: none;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    outline: none;
+}
+
+#botao-enviar{
+    align-self: center;
+    width: 99%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    color: #7583f285;
+    background-color: white;
+    cursor: pointer;
+}
+
+#botao-enviar:hover{
+    color: #7584f2;
+    border-color: #4253ce;
+    transition: all 0.3s;
+}
+
+#botao-principal{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-size: 15px;
+    height: 50px;
+    background-color: #7584f2;
+    color: white;
+    font-weight: 700;
+    width: 90%;
+    cursor: pointer;
+}
+
+#botao-principal:hover{
+    transition: all 0.75s;
+    background-color: white;
+    border: 1px solid #4253ce;
+    color: #7584f2;
+}
+
+/* Abas em desenvolvimento */
+#desenvolvimento{
+    margin-top: 10%;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+/* RODAPE */
+.logoFooter {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    pointer-events: none;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: #111111;
+    display: flex;
+    padding: 15px 30px 15px 30px;
+}
+
+.corpoFooter{
+    color: white;
+    font-size: 13px;
+    padding-left: 30px;
+    padding-top: 0px;
+    display: flex;
+    width: auto;
+}
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+  
+body::-webkit-scrollbar-track {
+    background: #ccc;      
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #292929; 
+    border: 1px solid #111111;
+}
+
+/* Rsponsividade */
+
+@media screen and (max-width: 1210px){
+    aside{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    article{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    #section-sobre-contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #p-sobre{
+        align-self: center;
+        max-width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    header ul{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    #logo-escrito{
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    #sobre{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    #sobre{
+        max-width: 70%;
+    }
+    .corpoFooter{
+        font-size: 10px;
+    }
+    .logoFooter{
+        width: 50px;
+        height: 50px;
+    }
+}

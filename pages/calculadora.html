@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Link arquivos -->
+    <link rel="shortcut icon" href="../img/icon-delta.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styleCalculadora.css">
+    <script src="../js/scriptCalculadora.js"></script>
+    <title>Equação de 2º grau</title>
+</head>
+<body>
+    
+    <div class="centro-h-logo">
+        <!-- Logo -->
+        <div class="divLogo"><img class="logo" src="../img/logo.png" alt="" onclick="voltarIndex()"></div>
+    </div>
+
+    <div class="centro-h">
+        <!-- container dos inputs -->
+        <div class="container">
+            <p class="titulo">ax² + bx + c = 0</p>
+            <input type="number" class="input" id="coeficienteA" placeholder="Coeficiente A:" required> <br>
+            <input type="number" class="input" id="coeficienteB" placeholder="Coeficiente B:" required> <br>
+            <input type="number" class="input" id="coeficienteC" placeholder="Coeficiente C:" required> <br>
+
+            <input type="button" class="botao" value="Calcular" onclick="calcular(coeficienteA.value, coeficienteB.value, coeficienteC.value)">
+        </div>
+            
+        <div class="centro-v">
+            <!-- container para as info de status-->
+            <div class="container container-info status-info">
+                <p class="titulo">Status</p>
+                <p class="corpo corpo-status" id="infoStatusTela"></p>
+            </div>
+            <!-- Container para resultados -->
+            <div class="container container-info bhask-info">
+                <p class="titulo">Resultados</p> 
+                <p class="titulo subtitulo">Δ = <span id="deltaInfoTela" class="corpo">?</span></p>
+                <p class="titulo subtitulo">x¹= <span id="xPositivoInfoTela" class="corpo">?</p> 
+                <p class="titulo subtitulo">x²= <span id="xNegativoInfoTela" class="corpo">?</p>     
+            </div>
+        </div>
+
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <img src="../img/icon-logo-branco.png" alt="Logo" class="logoFooter">
+        <p class="corpoFooter">© 2023 EquationLab - Instituição de ensino. 53.085.772/0001-30<br>
+            Rua Porto Calvo, 69 - São Paulo, SP - 01109-070</p>
+
+        <a class="aFooter" href="./fluxo.html">Visualizar fluxograma</a>
+    </footer>
+
+</body>
+</html>

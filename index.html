@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+     <!-- Link arquivos -->
+     <link rel="stylesheet" href="css/styleIndex.css">
+     <link rel="shortcut icon" href="img/icon-logo.png" type="image/x-icon">
+
+     <!-- Só coloquei o script aqui por ser apenas uma function -->
+     <script>
+        function sobreContato(){
+        window.scroll({top: 750, behavior: "smooth"})
+        }
+     </script>
+
+    <title>EquationLab</title>
+</head>
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <!-- logo -->
+        <a href="index.html" id="logo-escrito">EquationLab</a>
+        <!-- menu -->
+        <ul>
+            <li><a onclick="sobreContato()">Sobre nós e Contato</a></li>
+            <li><a href="pages/desenvolvimento.html" id="ultimo-a">Outras calculadoras</a></li>
+        </ul>
+    </header>
+    <!-- conteudo principal 1 -->
+    <main id="conteudo-principal">
+        <!-- div semantica divir a pagina em colunas -->
+        <aside>
+            <h1>Confira a nossa</h1>
+            <h1><span>nova calculadora</span></h1>
+            <p id="p-main">
+                Desenvolvemos essa calculadora para ajudar quem possui dificuldades em encontrar as raizes de uma equação de 2º grau, clique no botão a baixo e confira!
+            </p>
+            <!-- Inputs -->
+            <form>
+                <a href="pages/calculadora.html"><input type="button" value="Vamos calcular!" id="botao-principal"></a>
+            </form>
+        </aside>
+
+        <!-- div semantica para imagens -->
+        <article>
+            <img src="img/icon-delta.png" alt="Delta" id="img-main">
+        </article>
+    </main>
+
+    <!-- conteudo principal 2 -->
+    <main>
+        <!-- Sobre nós e contato -->
+        <section id="section-sobre-contato">
+            <div id="sobre">
+                <div id="div-titulo-sobre">
+                    <img src="img/icon-logo.png" alt="EquationLab" id="img-sobre">
+                    <h2>Sobre nós</h2>
+                </div>
+                <p id="p-sobre">
+                    Aqui, acreditamos que a matemática é uma linguagem poderosa que todos podem aprender e dominar. 
+                    Nosso objetivo é facilitar o acesso à matemática e torná-la mais compreensível e acessível para estudantes de todas as idades. <br><br> <!-- Pular linha paragrafo -->
+                    Temos a missão de incentivar a curiosidade e a exploração matemática. Queremos que você descubra o lado fascinante da matemática, 
+                    proporcionando ferramentas interativas e educativas que promovem a compreensão e o aprendizado significativo.
+                </p>
+                <h4>Equipe <span>EquationLab</span></h4>
+            </div>
+
+            <!-- contato -->
+            <div id="contato">
+                <div id="div-titulo-contato">
+                    <h3>Feedbacks ou duvidas? <span>Entre em contato!</span></h3>
+                </div>
+                <form>
+                    <label id="label-input-txt">
+                        <input class="input-txt" type="text" placeholder="Nome:"> <br>
+                        <input class="input-txt" type="email" placeholder="Email:">
+                    </label>
+                    <textarea cols="30" rows="10" placeholder="Digite aqui seus comentários diante nossos serviços:"></textarea>
+                    <a href="index.html"><input type="button" value="Enviar" id="botao-enviar"></a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <img src="img/icon-logo-branco.png" alt="Logo" class="logoFooter">
+        <p class="corpoFooter">
+            © 2023 EquationLab - Instituição de ensino. 53.085.772/0001-30<br>
+            Rua Porto Calvo, 69 - São Paulo, SP - 01109-070
+        </p>
+    </footer>
+</body>
+</html>

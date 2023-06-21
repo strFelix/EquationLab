@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{ /*Resetando css do navegador*/
+    margin: 0;
+    padding: 0;
+    /*Alinha as coisas com as medidas da extremidade da pagina*/
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+#imgFluxo {
+    background-color: white;
+    padding: 1%;
+    border-radius: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logoFooter {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    pointer-events: none;
+}
+
+footer{
+    background-color: #111111;
+    display: flex;
+    padding: 15px 30px 15px 30px;
+}
+
+.corpoFooter{
+    color: white;
+    font-size: 13px;
+    padding-left: 30px;
+    padding-top: 12px;
+    display: flex;
+    width: auto;
+}
+
+.aFooter{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  margin-left: 55%;
+}
+
+.aFooter:hover{
+    color: #7584f2;
+    transition: all 0.2s;
+}
+
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+  
+body::-webkit-scrollbar-track {
+    background: #ccc;      
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #292929; 
+    border: 1px solid #111111;
+}
